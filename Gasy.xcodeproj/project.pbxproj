@@ -9,14 +9,13 @@
 /* Begin PBXBuildFile section */
 		1E9C52972BC8EA5700197164 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9C52962BC8EA5700197164 /* AppDelegate.swift */; };
 		1E9C52992BC8EA5700197164 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9C52982BC8EA5700197164 /* SceneDelegate.swift */; };
-		1E9C529B2BC8EA5700197164 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9C529A2BC8EA5700197164 /* ViewController.swift */; };
-		1E9C529E2BC8EA5700197164 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E9C529C2BC8EA5700197164 /* Main.storyboard */; };
 		1E9C52A12BC8EA5700197164 /* Gasy.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1E9C529F2BC8EA5700197164 /* Gasy.xcdatamodeld */; };
 		1E9C52A32BC8EA5900197164 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E9C52A22BC8EA5900197164 /* Assets.xcassets */; };
 		1E9C52A62BC8EA5900197164 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E9C52A42BC8EA5900197164 /* LaunchScreen.storyboard */; };
 		1E9C52B12BC8EA5A00197164 /* GasyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9C52B02BC8EA5A00197164 /* GasyTests.swift */; };
 		1E9C52BB2BC8EA5A00197164 /* GasyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9C52BA2BC8EA5A00197164 /* GasyUITests.swift */; };
 		1E9C52BD2BC8EA5A00197164 /* GasyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9C52BC2BC8EA5A00197164 /* GasyUITestsLaunchTests.swift */; };
+		1E9C52D42BC8F1D400197164 /* APIEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9C52D32BC8F1D400197164 /* APIEndpoints.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,8 +39,6 @@
 		1E9C52932BC8EA5700197164 /* Gasy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gasy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E9C52962BC8EA5700197164 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1E9C52982BC8EA5700197164 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1E9C529A2BC8EA5700197164 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		1E9C529D2BC8EA5700197164 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1E9C52A02BC8EA5700197164 /* Gasy.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Gasy.xcdatamodel; sourceTree = "<group>"; };
 		1E9C52A22BC8EA5900197164 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1E9C52A52BC8EA5900197164 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +48,7 @@
 		1E9C52B62BC8EA5A00197164 /* GasyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GasyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E9C52BA2BC8EA5A00197164 /* GasyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GasyUITests.swift; sourceTree = "<group>"; };
 		1E9C52BC2BC8EA5A00197164 /* GasyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GasyUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1E9C52D32BC8F1D400197164 /* APIEndpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEndpoints.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,14 +99,12 @@
 		1E9C52952BC8EA5700197164 /* Gasy */ = {
 			isa = PBXGroup;
 			children = (
-				1E9C52962BC8EA5700197164 /* AppDelegate.swift */,
-				1E9C52982BC8EA5700197164 /* SceneDelegate.swift */,
-				1E9C529A2BC8EA5700197164 /* ViewController.swift */,
-				1E9C529C2BC8EA5700197164 /* Main.storyboard */,
-				1E9C52A22BC8EA5900197164 /* Assets.xcassets */,
-				1E9C52A42BC8EA5900197164 /* LaunchScreen.storyboard */,
-				1E9C52A72BC8EA5900197164 /* Info.plist */,
-				1E9C529F2BC8EA5700197164 /* Gasy.xcdatamodeld */,
+				1E9C52C92BC8F02A00197164 /* Application */,
+				1E9C52CA2BC8F06300197164 /* Domain */,
+				1E9C52CD2BC8F08900197164 /* Infrastructure */,
+				1E9C52CC2BC8F07A00197164 /* Data */,
+				1E9C52D52BC8F31100197164 /* Utilites */,
+				1E9C52CB2BC8F07000197164 /* Presentation */,
 			);
 			path = Gasy;
 			sourceTree = "<group>";
@@ -128,6 +124,103 @@
 				1E9C52BC2BC8EA5A00197164 /* GasyUITestsLaunchTests.swift */,
 			);
 			path = GasyUITests;
+			sourceTree = "<group>";
+		};
+		1E9C52C92BC8F02A00197164 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				1E9C52962BC8EA5700197164 /* AppDelegate.swift */,
+				1E9C52982BC8EA5700197164 /* SceneDelegate.swift */,
+				1E9C52A72BC8EA5900197164 /* Info.plist */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		1E9C52CA2BC8F06300197164 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				1E9C52CE2BC8F0A000197164 /* Entities */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		1E9C52CB2BC8F07000197164 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				1E9C52CF2BC8F0CC00197164 /* Login */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		1E9C52CC2BC8F07A00197164 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		1E9C52CD2BC8F08900197164 /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				1E9C52D22BC8F16D00197164 /* Network  */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		1E9C52CE2BC8F0A000197164 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		1E9C52CF2BC8F0CC00197164 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				1E9C52D12BC8F0F200197164 /* ViewModer */,
+				1E9C52D02BC8F0EA00197164 /* View */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		1E9C52D02BC8F0EA00197164 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1E9C52D12BC8F0F200197164 /* ViewModer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModer;
+			sourceTree = "<group>";
+		};
+		1E9C52D22BC8F16D00197164 /* Network  */ = {
+			isa = PBXGroup;
+			children = (
+				1E9C52D32BC8F1D400197164 /* APIEndpoints.swift */,
+			);
+			path = "Network ";
+			sourceTree = "<group>";
+		};
+		1E9C52D52BC8F31100197164 /* Utilites */ = {
+			isa = PBXGroup;
+			children = (
+				1E9C52D72BC8F40200197164 /* Base */,
+				1E9C529F2BC8EA5700197164 /* Gasy.xcdatamodeld */,
+				1E9C52A22BC8EA5900197164 /* Assets.xcassets */,
+			);
+			path = Utilites;
+			sourceTree = "<group>";
+		};
+		1E9C52D72BC8F40200197164 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				1E9C52A42BC8EA5900197164 /* LaunchScreen.storyboard */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,7 +329,6 @@
 			files = (
 				1E9C52A62BC8EA5900197164 /* LaunchScreen.storyboard in Resources */,
 				1E9C52A32BC8EA5900197164 /* Assets.xcassets in Resources */,
-				1E9C529E2BC8EA5700197164 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,7 +353,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1E9C529B2BC8EA5700197164 /* ViewController.swift in Sources */,
+				1E9C52D42BC8F1D400197164 /* APIEndpoints.swift in Sources */,
 				1E9C52A12BC8EA5700197164 /* Gasy.xcdatamodeld in Sources */,
 				1E9C52972BC8EA5700197164 /* AppDelegate.swift in Sources */,
 				1E9C52992BC8EA5700197164 /* SceneDelegate.swift in Sources */,
@@ -301,14 +393,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		1E9C529C2BC8EA5700197164 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1E9C529D2BC8EA5700197164 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		1E9C52A42BC8EA5900197164 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -442,7 +526,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Gasy/Info.plist;
+				INFOPLIST_FILE = Gasy/Application/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -469,7 +553,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Gasy/Info.plist;
+				INFOPLIST_FILE = Gasy/Application/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
